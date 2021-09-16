@@ -1,0 +1,586 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* heeader */
+.header {
+  justify-content: space-around;
+  min-height: 12vh;
+}
+.header-logo {
+  width: 4rem;
+  height: 2rem;
+}
+
+.header-logo img {
+  width: 100%;
+  height: 100%;
+}
+header button {
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+header .header-btn {
+  transition: all 0.3s linear;
+}
+header .header-btn:hover {
+  color: tomato;
+}
+/* Nav */
+header nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  border: none;
+  color: #fff;
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+}
+nav button {
+  float: right;
+  color: #fff;
+  margin: 0.5em;
+  transition: all 0.3 linear;
+}
+nav button:hover {
+  color: tomato;
+}
+nav h1 {
+  clear: right;
+  text-align: center;
+}
+nav ul {
+  margin-left: 2em;
+  padding: 2em;
+  list-style-type: circle;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: tomato;
+  margin-bottom: 1rem;
+  transition: all 0.3 linear;
+}
+nav a:hover {
+  text-decoration: none;
+  color: white;
+}
+nav h1:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+header i {
+  user-select: none;
+}
+
+.show nav {
+  transform: translateX(0);
+}
+/* section one */
+.sec1 {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(./img/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: flex-start;
+  justify-content: flex-end;
+  color: #fff;
+}
+.article-con {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em;
+  padding-left: 0;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  padding: 1em;
+}
+article h4 {
+  font-size: 1rem;
+  padding: 0.4em 0;
+}
+article i {
+  font-size: 5rem;
+}
+.sec1-content {
+  padding: 2rem;
+  margin-left: 5%;
+  margin-bottom: 0;
+}
+.sec1-content h3 {
+  font-size: 3.5em;
+}
+.sec1-content h2 {
+  padding: 0.3em 0;
+  font-size: 7.5rem;
+  border-bottom: 10px solid #fff;
+}
+/*....... section 2  ...... */
+.sec2 {
+  min-height: 70vh;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.1);
+}
+.sec2 p:nth-of-type(1) {
+  font-size: 2em;
+  padding: 0.5em 0;
+}
+.sec2 p:nth-of-type(2) {
+  font-size: 5.5em;
+  padding: 0.1em 0;
+}
+.sec2 p:nth-of-type(3) {
+  font-size: 2em;
+  padding: 0.5em 0;
+}
+.sec2 p:nth-of-type(4) {
+  font-size: 2em;
+  padding: 0.5em 0;
+}
+.sec2 button,
+.sec4 button {
+  border: none;
+  padding: 1.2em;
+  outline: none;
+  color: white;
+  background-color: tomato;
+}
+/* ...... section 3....... */
+.sec3 {
+  min-height: 100vh;
+}
+.sec3-content {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto 0;
+}
+.sec3-content article {
+  width: 50%;
+}
+.sec3-img-con {
+  width: 100%;
+}
+.sec3-img-con img {
+  width: 100%;
+  height: 100%;
+}
+.sec3-content article:nth-of-type(2) {
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.sec3-content article:nth-of-type(2) h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.sec3-content article:nth-of-type(2) h3 {
+  font-size: 2rem;
+  color: tomato;
+}
+.sec3 article p {
+  padding: 4em 2em;
+}
+/*...... section 4 ...... */
+.sec4 {
+  height: 100vh;
+  flex-direction: row;
+  background: url(./img/blank.jpg);
+}
+.sec4 div {
+  text-align: left;
+  width: 45%;
+  padding: 4em 0;
+}
+.sec4 button {
+  margin-top: 2em;
+}
+.sec4 div h2:nth-of-type(1) {
+  font-size: 4rem;
+  padding: 0.5em 0em;
+  color: #104e92;
+  font-weight: 900;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 8px solid tomato;
+}
+.sec4 div h2:nth-of-type(2) {
+  padding: 1em 0em;
+  word-wrap: break-word;
+  line-height: 1.6;
+}
+.sec4 div:first-of-type {
+  background: url(./img/billionphotos1079319min.png);
+  height: 100%;
+  background-position: 50% 0%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/*  ...... sec 5 ........ */
+
+.sec5 {
+  min-height: 75vh;
+  margin-left: 7rem;
+  align-items: flex-start;
+}
+.sec5-content {
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+.sec5-content .service {
+  align-items: flex-start;
+  width: 30%;
+  padding: 1em;
+}
+
+.service button i {
+  font-size: 3.5rem;
+}
+.service button {
+  color: #fff;
+  background-color: tomato;
+  border: none;
+  outline: none;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+}
+.sec5 h2 {
+  font-size: 3.5em;
+  margin-bottom: 0.8em;
+}
+.service h2 {
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+.service p {
+  line-height: 1.6;
+  font-style: italic;
+  font-size: 1.2em;
+  word-wrap: break-word;
+}
+/* section 6 */
+.sec6 {
+  min-height: 85vh;
+  color: #ffffff;
+  background-color: #104e92;
+}
+.sec6-content {
+  width: 85%;
+  padding: 2em;
+}
+.sec6 img {
+  width: 100%;
+  height: 100%;
+}
+.sec6 .sec6-text {
+  width: 50%;
+  align-items: flex-start;
+}
+.sec6-text p {
+  letter-spacing: 5px;
+}
+.sec6-text h2 {
+  font-size: 6em;
+}
+.sec6-text h2:first-of-type {
+  font-weight: 300;
+}
+.sec6 .sec6-gal {
+  width: 50%;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 2em;
+}
+
+/* section 7 */
+.sec7 {
+  min-height: 70vh;
+}
+.sec7-content {
+  width: 55%;
+  padding: 1em;
+  text-align: center;
+}
+.sec7 h2 {
+  font-size: 2.5em;
+  font-weight: 900;
+}
+.sec7 button {
+  border: none;
+  outline: none;
+  padding: 1em;
+  width: 10em;
+}
+.sec7 button:first-of-type {
+  color: #fff;
+  background-color: tomato;
+  margin-right: 0.5em;
+}
+.sec7 button:last-of-type {
+  background-color: white;
+  border: 1px solid grey;
+  margin-left: 0.5em;
+}
+
+.sec7 p {
+  font-size: 1.7em;
+  line-height: 1.6;
+  word-spacing: 2px;
+  padding: 1.5em;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  min-height: 30vh;
+  background-color: grey;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+footer a {
+  text-decoration: none;
+  color: #3fc2c2;
+}
+
+/* Code by Your Favourite... I am Alex. */
+
+/* Almighty Media Queries */
+@media screen and (max-width: 768px) {
+  header nav {
+    width: 35%;
+  }
+  /*..... section 1 .... */
+  .article-con {
+    width: 90%;
+  }
+  article i {
+    font-size: 3.5rem;
+  }
+  .sec1-content {
+    margin-left: 2%;
+  }
+  .sec1-content h3 {
+    font-size: 2.7em;
+  }
+  .sec1-content h2 {
+    font-size: 5rem;
+  }
+  /* .....section 2 ......*/
+
+  .sec2 p:nth-of-type(1) {
+    font-size: 1.3em;
+    padding: 0.5em 0;
+  }
+  .sec2 p:nth-of-type(2) {
+    font-size: 5em;
+  }
+  .sec2 p:nth-of-type(3),
+  .sec2 p:nth-of-type(4) {
+    font-size: 1.8em;
+    padding: 0.4em 1.5em;
+  }
+  .sec2 button {
+    margin-bottom: 1em;
+  }
+  /* .....section 3.... */
+  .sec3-content {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .sec3-content article {
+    width: 100%;
+  }
+  .sec3-content article:nth-of-type(2) h2 {
+    padding-bottom: 0.5em;
+    padding-left: 1.5em;
+  }
+  .sec3-content article:nth-of-type(2) h3 {
+    margin-bottom: 2em;
+    padding-left: 1.7em;
+  }
+  .sec3 article p {
+    padding: 3em;
+  }
+  /* ......section 4..... */
+  .sec4 div h2:nth-of-type(1) {
+    font-size: 3rem;
+  }
+  .sec4 div h2:nth-of-type(2) {
+    padding: 1em 0em;
+    font-size: 1.1em;
+  }
+  /* ......section 5..... */
+  .sec5 {
+    margin-left: 2rem;
+  }
+  .sec5 h2 {
+    font-size: 3em;
+  }
+  .service h2 {
+    font-size: 1.7em;
+  }
+  /* .....section 6..... */
+  .sec6-content {
+    width: 90%;
+    flex-direction: column;
+  }
+  .sec6 .sec6-text {
+    width: 100%;
+  }
+  .sec6-text h2 {
+    font-size: 5em;
+    margin-bottom: 1em;
+  }
+  .sec6 .sec6-gal {
+    width: 100%;
+    padding: 0;
+  }
+  /* .....section 7 .... */
+
+  .sec7-content {
+    width: 80%;
+  }
+
+  /* ....footer... */
+  .footer-content {
+    text-align: center;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  header nav {
+    width: 50%;
+  }
+  /*.... section 1.... */
+  .sec1 {
+    background-position: 81.49% 50%;
+  }
+  article {
+    padding: 0.5em;
+  }
+  article h4 {
+    font-size: 0.8rem;
+    padding: 0.4em 0;
+  }
+  article i {
+    font-size: 2.6rem;
+  }
+  .sec1-content {
+    padding: 0.5em;
+    margin-left: 0;
+  }
+  .sec1-content h3 {
+    font-size: 1.2em;
+  }
+  .sec1-content h2 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  /* ....section 2.... */
+  .sec2 p:nth-of-type(2) {
+    font-size: 4em;
+  }
+
+  /* .....section 4.... */
+  .sec4 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .sec4 div {
+    text-align: left;
+    width: 90%;
+    padding: 1em;
+  }
+  .sec4 div:last-of-type {
+    padding: 4em 0;
+  }
+
+  .sec4 div h2:nth-of-type(1) {
+    font-size: 2rem;
+    padding: 0.5em 0em;
+  }
+  .sec4 div h2:nth-of-type(2) {
+    padding: 1em 0em;
+    font-size: 1em;
+  }
+  .sec4 div:first-of-type {
+    min-height: 500px;
+  }
+
+  /* ....section 5... */
+  .sec5 {
+    min-height: 75vh;
+    margin-left: 2rem;
+    align-items: flex-start;
+  }
+  .sec5-content {
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .sec5-content .service {
+    align-items: flex-start;
+    width: 90%;
+    padding: 1em;
+  }
+  /* ....section6 .... */
+  .sec6 {
+    min-height: 85vh;
+    color: #ffffff;
+    background-color: #104e92;
+  }
+  .sec6-content {
+    width: 95%;
+    padding: 0.5em;
+  }
+  .sec6 .sec6-text {
+    margin-top: 2em;
+  }
+  .sec6-text h2 {
+    font-size: 3.5em;
+  }
+  .sec6 .sec6-gal {
+    grid-template-columns: repeat(1, auto);
+  }
+  /* ..... section 7..... */
+  .sec7-content {
+    width: 100%;
+  }
+}
+
+/* I.Am.Alex KodeCamp Resonsiveness + NavBar Project */
